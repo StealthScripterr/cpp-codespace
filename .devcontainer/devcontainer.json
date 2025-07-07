@@ -1,0 +1,13 @@
+{
+  "name": "C++ Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/cpp:ubuntu",  
+  "features": {
+    "ghcr.io/devcontainers/features/llvm:1": {
+      "version": "latest"
+    }
+  },
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "postCreateCommand": "sudo apt update && sudo apt install -y g++ make"
+}
